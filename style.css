@@ -1,0 +1,52 @@
+body
+{
+    background-color:rgb(50, 55, 97);
+}
+p
+{
+    color: white;
+}
+.title
+{
+    height: 6rem;
+    background-color: white;
+    font-family: 'Carter One', cursive;
+}
+
+
+
+.choiceList
+{
+    height: 10em;
+}
+
+.weaponChoice
+{
+    height: 12em;
+}
+
+.green-glow
+{
+    border : 8px solid #4dcc7d !important;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow
+{
+    border : 8px solid #fc121b !important;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.grey-glow
+{
+    border : 8px solid #c2c2c2 !important;
+    box-shadow: 0 0 10px #828e94;
+}
+
+.highScoreBoard
+{
+    height: 200px;
+    color: white;
+    
+}
+

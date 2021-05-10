@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shifoumi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="title container d-flex align-items-center justify-content-center"
+    >
+      <h1 class="text-center">Shifumi</h1>
+    </div>
+
+    <div class="spacer py-2"></div>
+
+    <div
+      class="col-3 border-5 border border-dark bg-light bg-light container d-flex justify-content-center"
+      class="scoreBoard"
+    >
+      <div id="userScore">0</div>
+      :
+      <div id="computerScore">0</div>
+    </div>
+
+    <div class="spacer py-3"></div>
+
+    <div class="container d-flex scoreTable">
+      <div class="col-2 container" class="imageUser" id="userLabel">
+        <img class="rounded-circle w-100" src="src\userIcon.jpg" alt="" />
+      </div>
+      <div class="rounded col-2 container d-flex justify-content-center">
+        <img src="src\versus.svg" alt="" />
+      </div>
+      <div
+        class="col-2 container d-flex align-items-center"
+        class="imageComputer"
+        id="computerLabel"
+      >
+        <img class="rounded-circle w-100" src="src\bot_icon.gif" alt="" />
+      </div>
+    </div>
+
+    <div class="spacer py-3"></div>
+
+    <div class="container d-flex justify-content-around weaponChoice">
+      <div class="col-2 rounded-circle border border-dark border-3 d-flex  align-items-center" id="userWeaponChoice"></div>
+      <div class="col-2 rounded-circle border border-dark border-3 d-flex  align-items-center" id="computerWeaponChoice"></div>
+    </div>
+
+    <div class="result">
+      <p class="fs-1 text-center">Bien joué !</p>
+    </div>
+
+    <div class="spacer py-3"></div>
+
+    <div class="choiceList container d-flex justify-content-center">
+      <div class="col-2 rounded-circle d-flex justify-content-center" id="rock">
+        <img class="mw-100 mh-100" src="src\rock.png" alt="rock" id="imgRock"/>
+      </div>
+      <div class="col-2 rounded-circle d-flex justify-content-center" id="paper">
+        <img class="mw-100 mh-100 px-3" src="src\paper.png" alt="paper" id="imgPaper" />
+      </div>
+      <div class="col-2 rounded-circle d-flex justify-content-center" id="scissors">
+        <img class="mw-100 mh-100 py-3 px-1" src="src\scissors.png" alt="scissor" id="imgScissors"/>
+      </div>
+    </div>
+
+
+
+    <div class="container highScoreBoard d-flex justify-content-center">
+      <table>
+        <tr><th>Tableau des scores</th></tr>
+        <tr>
+          <td>joueur</td>
+          <td>IA</td>
+        </tr>
+        <tr>
+          <td id="boardPlayer">0</td>
+          <td id="boardIA">0</td>
+        </tr>
+        
+          
+        
+        
+      </table>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
